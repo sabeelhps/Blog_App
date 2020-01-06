@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Blog App</title>
+
+        <base href="/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        
+        <base href="/">
+        <link rel="stylesheet" href="app.css">
+
+        <base href="/">
+        <link rel="stylesheet" href="bootstrap.css">
+
+
+    </head>
+    <body>
+
+            <div class="ui fixed inverted menu">
+                <div class="ui container">
+                    <div class="header item"><i class="code icon"></i>Blog Site</div>
+                    <a href="/" class="item">Home</a>
+                    <a href="/blogs/new" class="item">New Post</a>
+                </div>
+
+            </div>
+
+
+            <div class="ui main text container segment">
+                <div class="ui huge header">New Blog</div>
+
+                <form class="ui form" action="/blogs"  method="POST">
+
+                    <div class="field">
+                        <label>Title</label>
+                        <input type="text" name="blog[title]" placeholder="title">
+
+                    </div>
+                    <div class="field">
+                            <label>Image</label>
+                            <input type="text" name="blog[image]" placeholder="image">
+    
+                    </div>
+                    <div class="field">
+                                <label>Blog content</label>
+                               <textarea name="blog[body]" id="" placeholder="Blog Post Goes Here" cols="30" rows="10"></textarea>
+                    </div>
+
+                    
+                  
+                    <input class="ui grey big basic button" type="submit" name="" id="">
+
+
+                </form>
+
+
+            </div>
+
+
+
+
+            
+
+          
+
+    </body>
+</html>
+
+
