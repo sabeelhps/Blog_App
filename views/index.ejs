@@ -32,9 +32,11 @@
                         <h2><%=blog.title%></h2>
                         <img class="img-thumbnail" src="<%=blog.image%>" alt="" width="500" height="300">
 
-                    </br>
-                        <span><%=blog.Created%></span>
-                        <p><%=blog.body%></p>
+                   
+                        <p style="margin-top: 1.5em;"><%=blog.Created.toDateString()%></p>
+                        <p><%=blog.body.substring(0,200)%>...</p>
+
+                        <a href="/blogs/<%=blog._id%>" class="btn btn-lg btn-info">More Info</a>
 
                         <hr>
                     </div>
