@@ -3,7 +3,7 @@ var app=express();
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");  
 
-mongoose.connect("mongodb://localhost/blog_app",{useNewUrlParser:true,useUnifiedTopology:true});
+mongoose.connect("mongodb+srv://sabeel:sabeel123@cluster0-rdk1k.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
 // app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
