@@ -33,7 +33,7 @@
                         <img class="img-thumbnail" src="<%=blog.image%>" alt="" width="500" height="300">
 
                    
-                        <p style="margin-top: 1.5em;"><%=blog.Created.toDateString()%></p>
+                        <p style="margin-top: 1.5em;"><strong><%=blog.Created.toDateString()%></strong></p>
                         <p><%=blog.body.substring(0,200)%>...</p>
 
                         <a href="/blogs/<%=blog._id%>" class="btn btn-lg btn-info">More Info</a>
